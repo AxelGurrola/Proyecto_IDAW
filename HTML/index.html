@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="">
+    <script src="../JavaScript/ValidacionCURP.js"></script>
 </head>
 <body>
     <header>
@@ -13,8 +13,13 @@
     </header>
     <label for="Curp">CURP</label>
     <form action="">
-        <input class="CURP" type="text" placeholder="Ingresa tu CURP" required>
+        <input class="CURP" id="curp_input" oninput="validarInput(this)" type="text" placeholder="Ingresa tu CURP" required>
         <input type="submit">
+        <pre id="resultado"></pre>
     </form>
+    <footer>
+        <h4>Este Programa es público, ajeno a cualquier partido político. <br> Queda prohibido el uso para fines distintos a los establecidos en el programa ©
+        </h4>
+    </footer>
 </body>
 </html>
