@@ -1,20 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Válidación</title>
+    <link rel="stylesheet" href="../CSS/estilosIndex.css">
 </head>
 <body>
     <header>
         <a href="index.html">Vacunacion Covid-19</a>
     </header>
-    <label for="Curp">CURP</label>
     <form action="">
-        <input class="CURP" id="curp_input" oninput="validarInput(this)" type="text" placeholder="Ingresa tu CURP" required>
+        <div>
+            <label for="Curp">CURP</label>
+            <input class="CURP" id="curp_input" oninput="validarInput(this)" type="text" placeholder="Ingresa tu CURP" required>
+        </div>
         <input type="submit">
         <pre id="resultado"></pre>
+        <div id="mango" >
+            <label for="apellido" id="etiqueta-paterno">Apellido paterno</label>
+            <input id="apellido-paterno" type="text" placeholder="Introduzca su primer apellido" required><br>
+            <label for="apellido" id="etiqueta-materno">Apellido materno</label>
+            <input id="apellido-materno" type="text" placeholder="Introduzca su segundo apellido" required><br>
+            <label for="apellido" id="etiqueta-nombre">Nombre</label>
+            <input id="nombre" type="text" placeholder="Introduzca su nombre" required>
+        </div>
+        <div>
+            <select name="" id="">
+                <option value="Zs" >sxsxs</option>
+            </select>
+        </div>
     </form>
     <footer>
         <h4>Este Programa es público, ajeno a cualquier partido político. <br> Queda prohibido el uso para fines distintos a los establecidos en el programa ©

@@ -36,9 +36,13 @@ function validarInput(input) {
     if (curpValida(curp)) { // ⬅️ Acá se comprueba
     	valido = "Válido";
         resultado.classList.add("ok");
+        document.getElementById("mango").style.display = 'inline';
+
     } else {
     	resultado.classList.remove("ok");
     }
         
     resultado.innerText = "CURP: " + curp + "\nFormato: " + valido;
+
+
 }
