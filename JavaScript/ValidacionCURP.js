@@ -28,21 +28,16 @@ function curpValida(curp) {
 
 //Handler para el evento cuando cambia el input
 //Lleva la CURP a mayúsculas para validarlo
-function validarInput(input) {
-    var curp = input.value.toUpperCase(),
-        resultado = document.getElementById("resultado"),
-        valido = "No válido";
+function validarInput() {
+    var input = document.getElementById("curp_input").value;
+    var curp = input.toUpperCase();
         
     if (curpValida(curp)) { // ⬅️ Acá se comprueba
     	valido = "Válido";
-        resultado.classList.add("ok");
         document.getElementById("mango").style.display = 'inline';
+        document.getElementById("pina").style.display = 'inline';
 
     } else {
-    	resultado.classList.remove("ok");
+    	alert("La CURP ingresada no es válida");
     }
-        
-    resultado.innerText = "CURP: " + curp + "\nFormato: " + valido;
-
-
 }

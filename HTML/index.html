@@ -14,11 +14,15 @@
     <form action="">
         <div>
             <label for="Curp">CURP</label>
-            <input class="CURP" id="curp_input" oninput="validarInput(this)" type="text" placeholder="Ingresa tu CURP" required>
+            <input class="CURP" id="curp_input" type="text" placeholder="Ingresa tu CURP" required>
+            <a href="https://www.gob.mx/curp/" class="link-curp">¿No conoces tu curp?</a><br>
+            <button onclick="validarInput()">Enviar</button>
         </div>
-        <input type="submit">
         <pre id="resultado"></pre>
         <div id="mango" >
+            <h3 class="datos-personales">
+                Datos personales
+            </h3>
             <label for="apellido" id="etiqueta-paterno">Apellido paterno</label>
             <input id="apellido-paterno" type="text" placeholder="Introduzca su primer apellido" required><br>
             <label for="apellido" id="etiqueta-materno">Apellido materno</label>
@@ -26,10 +30,32 @@
             <label for="apellido" id="etiqueta-nombre">Nombre</label>
             <input id="nombre" type="text" placeholder="Introduzca su nombre" required>
         </div>
-        <div>
-            <select name="" id="">
-                <option value="Zs" >sxsxs</option>
-            </select>
+        <div id="pina">
+            <h3 class="nombre-tabla">
+                Domicilio
+            </h3>
+            <div class="calle">
+                <label id="calle-etiqueta">Calle</label>
+                <input id="calle-input" type="text" placeholder="Intraduzca el nombre de su calle" required>
+            </div>
+            <div class="num-exterior">
+                <label id="etiqueta-num-exterior">Número exterior</label>
+                <input id="num-exterior" type="text" placeholder="Intraduzca el número exterior" required>
+            </div>
+            <div class="num-interior">
+                <label id="etiqueta-num-interior">Número exterior</label>
+                <input id="num-interior" type="text" placeholder="Intraduzca el número interior">
+            </div>
+            <div class="colonia">
+                <label id="etiqueta-colonia">Colonia</label>
+                <input id="colonia" type="text" placeholder="Introduzca su colonia" required>
+            </div>
+            <div class="codPostal">
+                <label id="etiqueta-codPostal">Código postal</label>
+                <input type="text" placeholder="Introduzca su código postal" required>
+            </div>
+            <input type="submit">
+            <input type="submit" value="Borrar" onclick="javascript:window.location.reload();"/>
         </div>
     </form>
     <footer>
