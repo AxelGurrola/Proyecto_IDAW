@@ -5,63 +5,97 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Válidación</title>
-    <link rel="stylesheet" href="../CSS/estilosIndex.css">
+    <link rel="stylesheet" href="../CSS/estiloIndex.css">
 </head>
 <body>
-    <header>
-        <a href="index.html">Vacunacion Covid-19</a>
+    <div id="contenedor">
+    <header id="cabecera">
+        <h2>Vacunacion<br> Covid-19</h2>
+
+
     </header>
     <form action="">
-        <div>
-            <label for="Curp">CURP</label>
-            <input class="CURP" id="curp_input" type="text" placeholder="Ingresa tu CURP" required>
-            <a href="https://www.gob.mx/curp/" class="link-curp">¿No conoces tu curp?</a><br>
+
+
+        <center>
+        <div id="apartado1">
+            <label for="Curp">CURP</label><br>
+            <input class="CURP" id="curp_input" type="text" placeholder="Ingresa tu CURP" required><br>
+            <a href="https://www.gob.mx/curp/" class="link-curp">¿No conoces tu curp?</a><br><br>
             <button onclick="validarInput()">Enviar</button>
         </div>
+
         <pre id="resultado"></pre>
+        <div id="datos">
+        
+
+
         <div id="mango" >
+
+            <fieldset>
+                <legend>
             <h3 class="datos-personales">
                 Datos personales
             </h3>
-            <label for="apellido" id="etiqueta-paterno">Apellido paterno</label>
-            <input id="apellido-paterno" type="text" placeholder="Introduzca su primer apellido" required><br>
-            <label for="apellido" id="etiqueta-materno">Apellido materno</label>
-            <input id="apellido-materno" type="text" placeholder="Introduzca su segundo apellido" required><br>
-            <label for="apellido" id="etiqueta-nombre">Nombre</label>
-            <input id="nombre" type="text" placeholder="Introduzca su nombre" required>
+
+            </legend>
+            <label for="apellido" id="etiqueta-paterno">Apellido paterno</label><br>
+            <input id="apellido-paterno" type="text" placeholder="Introduzca su primer apellido" required><br><br>
+            <label for="apellido" id="etiqueta-materno">Apellido materno</label><br>
+            <input id="apellido-materno" type="text" placeholder="Introduzca su segundo apellido" required><br><br>
+            <label for="apellido" id="etiqueta-nombre">Nombre</label><br>
+            <input id="nombre" type="text" placeholder="Introduzca su nombre" required><br><br>
+
+           </fieldset> 
         </div>
+        
+
         <div id="pina">
+            <fieldset>
+
+                <legend>
             <h3 class="nombre-tabla">
                 Domicilio
             </h3>
+           </legend> 
             <div class="calle">
-                <label id="calle-etiqueta">Calle</label>
-                <input id="calle-input" type="text" placeholder="Intraduzca el nombre de su calle" required>
+
+
+                <label id="calle-etiqueta">Calle</label><br>
+                <input id="calle-input" type="text" placeholder="Intraduzca el nombre de su calle" required><br><br>
             </div>
             <div class="num-exterior">
                 <label id="etiqueta-num-exterior">Número exterior</label>
-                <input id="num-exterior" type="text" placeholder="Intraduzca el número exterior" required>
+                
+                <input id="num-exterior" type="text" placeholder="Intraduzca el número exterior" required><br><br>
             </div>
             <div class="num-interior">
-                <label id="etiqueta-num-interior">Número exterior</label>
-                <input id="num-interior" type="text" placeholder="Intraduzca el número interior">
+                <label id="etiqueta-num-interior">Número exterior</label><br>
+                <input id="num-interior" type="text" placeholder="Intraduzca el número interior"><br><br>
             </div>
             <div class="colonia">
-                <label id="etiqueta-colonia">Colonia</label>
-                <input id="colonia" type="text" placeholder="Introduzca su colonia" required>
+                <label id="etiqueta-colonia">Colonia</label><br>
+                <input id="colonia" type="text" placeholder="Introduzca su colonia" required><br><br>
             </div>
             <div class="codPostal">
-                <label id="etiqueta-codPostal">Código postal</label>
-                <input type="text" placeholder="Introduzca su código postal" required>
+                <label id="etiqueta-codPostal">Código postal</label><br>
+                <input type="text" placeholder="Introduzca su código postal" required><br><br>
             </div>
-            <input type="submit">
-            <input type="submit" value="Borrar" onclick="javascript:window.location.reload();"/>
+            <input  id="enviar" type="submit" value="Enviar">
+            <input id="borrar "type="submit" value="Borrar" onclick="javascript:window.location.reload();"/>
+           </fieldset> 
         </div>
+
+    </div>
     </form>
-    <footer>
+    <footer id=pie>
         <h4>Este Programa es público, ajeno a cualquier partido político. <br> Queda prohibido el uso para fines distintos a los establecidos en el programa ©
         </h4>
     </footer>
+</center>
     <script src="../JavaScript/ValidacionCURP.js"></script>
+</div>
 </body>
+
+
 </html>
