@@ -1,3 +1,140 @@
+
+#contenedor
+{
+   width: 87%;
+   margin: 20px auto;
+   text-align: left;
+   background-color: white;
+   border-radius: 7px;
+   border-left: 20px solid #C57575 ;
+   border-bottom: 20px solid #C57575 ;
+   border-right: 20px solid #EDBB99;
+
+}
+body{
+   background-color: #FAFBF4;
+
+
+}
+
+#cabecera 
+{
+   text-align: left;
+   background:#C57575;
+   padding: 3px;
+   color: white;
+   border-bottom: 20px solid #EDBB99;
+    font-family: BankGothic Md BT;
+   font-weight: bold;
+   font-size: 35px;
+   background-image: url("../imagenes/amlo.jpg");
+   background-repeat: no-repeat;
+   background-size: 20%,auto;
+   background-position: right;
+   padding-left: 130px;
+   border-image:2px solid initial;
+
+
+}
+label,input{
+   font-size: 20px;
+   font-family:Complex ;
+}
+#pie 
+{
+   clear: both;
+   color: #838281;
+   background-color: #F7F9F9;
+   text-align: center;
+   padding: 5px;
+   border-top: 2px solid #999999;
+ }
+
+ #apartado1{
+   width:80%;
+   height: 90%;
+   border:1px solid brown;
+   margin: 10px;
+   text-align: center;
+   border-radius: 7px;
+   box-shadow: rgb(181, 181, 181) 5px 5px 5px;
+   background: linear-gradient(#FDFEFE,#FDFEFE, #F2D7D5);
+
+}
+input{
+   border-radius: 5px;
+   margin: 10px;
+   width: 90%;
+   height: 35px;
+   background-color: #FAF9F9   ;
+   border-color: #FAF9F9  ;
+    font-family:Times New Roman ;
+}
+button{
+   text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #B3B6B7 ;
+    border-radius: 6px;
+    border: 2px solid #797D7F ;
+  }
+  button:hover{
+    color: #B3B6B7  ;
+    background-color: #ffffff;
+  }
+
+
+   #datos{
+   width:80%;
+   height: 90%;
+   border:1px solid brown;
+   margin: 10px;
+   text-align: center;
+   border-radius: 7px;
+   box-shadow: rgb(181, 181, 181) 5px 5px 5px;
+   background: linear-gradient(#FDFEFE,#FDFEFE, #F2D7D5);
+
+}
+
+fieldset{
+   margin: 20px;
+}
+
+
+#enviar{
+      text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    width: 100px;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #B3B6B7 ;
+    border-radius: 6px;
+    border: 2px solid #797D7F ;
+
+}
+#borrar{
+      text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    width: 100px;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #B3B6B7 ;
+    border-radius: 6px;
+    border: 2px solid #797D7F ;
+
+}
+
+
+legend{
+   font-family: Complex;
+}
+
+
+
 #mango {
     display: none;
 }
@@ -16,3 +153,6 @@ a:hover{
 footer h4{
     color: grey;
 }
+
+
+/*fjjjjjjjjjjjjjjj
